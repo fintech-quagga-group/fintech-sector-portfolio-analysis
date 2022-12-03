@@ -1,10 +1,10 @@
 # Fintech Sector Portfolio Analysis 
 
-Add description here
+(Add description here)
 
-Add data section here
+(Add data section here)
 
-Add project summary here
+(Add project summary here)
 
 ---
 
