@@ -37,7 +37,7 @@ If you would like to run the program in JupyterLab, install the [Anaconda](https
 ## Contributors
 
 [Ethan Silvas](https://github.com/ethansilvas)
-[]()
+[Naomy Velasco](https://github.com/naomynaomy)
 []()
 []()
 
