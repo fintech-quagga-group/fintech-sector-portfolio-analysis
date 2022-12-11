@@ -68,6 +68,12 @@ The following dependencies are used:
 
 If you would like to run the program in JupyterLab, install the [Anaconda](https://www.anaconda.com/products/distribution) distribution and run `jupyter lab` in a conda dev environment.
 
+To ensure that your notebook runs properly you can use the [requirements.txt](/Resources/requirements.txt) file to create an exact copy of the conda dev environment used to create the notebook. 
+
+Create the copy of the conda dev environment with `conda create --name myenv --file requirements.txt`
+
+Then install the requirements with `conda install --name myenv --file requirements.txt`
+
 ---
 
 ## Usage
