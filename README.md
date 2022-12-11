@@ -68,11 +68,21 @@ The following dependencies are used:
 
 If you would like to run the program in JupyterLab, install the [Anaconda](https://www.anaconda.com/products/distribution) distribution and run `jupyter lab` in a conda dev environment.
 
+To ensure that your notebook runs properly you can use the [requirements.txt](/Resources/requirements.txt) file to create an exact copy of the conda dev environment used to create the notebook. 
+
+Create a copy of the conda dev environment with `conda create --name myenv --file requirements.txt`
+
+Then install the requirements with `conda install --name myenv --file requirements.txt`
+
 ---
 
 ## Usage
 
 The Jupyter notebook [fintech-sector-portfolio-analysis.ipynb](/fintech-sector-portfolio-analysis.ipynb) will provide all steps of the data collection, preparation, and analysis. Data visualizations are shown inline and accompanying analysis responses are provided.
+
+Note that the data collection and the Monte Carlo simulations change every time that the notebook is ran. The data collection gets data 5 years from the date ran and the Monte Carlo simulations use that data to produce randomized results to predict what the portfolio performance could look like based on that data. 
+
+The data collected and shown in the examples were from the time that this project was started - November 2022. 
 
 ---
 
