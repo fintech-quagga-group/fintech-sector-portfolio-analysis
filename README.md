@@ -37,6 +37,9 @@ The following dependencies are used:
 4. [Matplotlib](https://github.com/matplotlib/matplotlib) (3.5.1) - Data visualization
 5. [Numpy](https://numpy.org/) (1.21.5) - Data calculations + Pandas support
 6. [hvPlot](https://hvplot.holoviz.org/index.html) (0.8.1) - Interactive Pandas plots 
+7. [holoviews](https://holoviews.org/) (1.15.2+) - **REQUIRED VERSION** Interactive Pandas plots; will cause error without proper version
+8. [Alpaca Trade API](https://alpaca.markets/docs/trading/) (2.3.0) - Required for Monte Carlo simulations
+9. [yfinance](https://pypi.org/project/yfinance/) (0.1.87) - Data collection
 
 ---
 
