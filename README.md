@@ -1,10 +1,12 @@
 # Fintech Sector Portfolio Analysis 
 
-Project Goals: 
-1. How each fintech sector/stock performs over time
-2. Relationship between each sector (correlation)
-3. Advice on which sectors and individual stocks could be potentially profitable
-4. Based on what we learned about the sectors/stock, if we were to come up with a portfolio (almost like an ETF) what stocks would we choose?
+This project is a portfolio analysis of different sectors within Fintech to better understand the growth, correlations, and profitability of Fintech companies. Through anaylzing different calculations such as finding the cumulative returns, 21-day rolling average and standard deviations, Sharpe ratios, and running Monte Carlo simulations, our analysis should provide insights into which sectors/stocks in Fintech would be good investments. 
+
+Through our analysis we hope to answer the following questions: 
+1. How does each Fintech sector, and the individual stocks within them, perform over time?
+2. Which sectors and individual stocks are the best potential investments? 
+3. What are the relationships or correlations between each sector? 
+4. Based on what we learned about the sectors and stocks, if we were to come up with a Fintech portfolio what stocks would we choose?
 
 Project Outline: 
 - Get daily returns
@@ -29,12 +31,6 @@ Project Outline:
     - cumulative returns of average daily returns
     - plot cumulative returns
     - Monte carlo sims (TBD)
-
-(Add description here)
-
-(Add data section here)
-
-(Add project summary here)
 
 ---
 
