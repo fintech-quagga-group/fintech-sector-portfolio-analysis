@@ -1,40 +1,28 @@
 # Fintech Sector Portfolio Analysis 
 
-Project Goals: 
-1. How each fintech sector/stock performs over time
-2. Relationship between each sector (correlation)
-3. Advice on which sectors and individual stocks could be potentially profitable
-4. Based on what we learned about the sectors/stock, if we were to come up with a portfolio (almost like an ETF) what stocks would we choose?
+This project is a portfolio analysis of different sectors within Fintech to better understand the growth, correlations, and profitability of Fintech companies. Through anaylzing different calculations such as finding the cumulative returns, 21-day rolling average and standard deviations, Sharpe ratios, and running Monte Carlo simulations, our analysis should provide insights into which sectors/stocks in Fintech would be good investments. 
 
-Project Outline: 
-- Get daily returns
-- Data analysis and calculations
-    - Daily return plots
-    - Box plots
-    - plot cumulative returns (probably move this above rolling stats)
-    - plot 21-day rolling average and std
-    - calc annualized average return, annualized std, then plot sharpe ratio (probably all stocks in one graph)
-    - average (.mean(axis=1)) all the sectors and do the steps for “Diversify the portfolio”
-        - when doing cov probably want to compare banking and lending to paytech
-            - banking.rolling().cov(paytech)
-            - lending.rolling().cov(paytech)
-- Monte carlo simulations
-    - Even weight (.33, .33, .33) 5 year prediction
-    - (.5, .2, .3) 5 year
-    - (.33, .33, .33) 1 year
-    - (.5, .2, .3) 1 year
-- Custom portfolio (last part for module 7 challenge + monte carlo)
-    - average daily returns (.mean(axis=1))
-    - annualized average daily returns
-    - cumulative returns of average daily returns
-    - plot cumulative returns
-    - Monte carlo sims (TBD)
+Through our analysis we hope to answer the following questions: 
+1. How does each Fintech sector, and the individual stocks within them, perform over time?
+2. Which sectors and individual stocks are the best potential investments? 
+3. What are the relationships or correlations between each sector? 
+4. Based on what we learned about the sectors and stocks, if we were to come up with a Fintech portfolio what stocks would we choose?
 
-(Add description here)
-
-(Add data section here)
-
-(Add project summary here)
+#### Data Used
+We currently use [yfinance](https://pypi.org/project/yfinance/) to grab 5 years of closing price data (from the time that the notebook code is ran) for the following sectors if Fintech: 
+    
+1. Paytech
+    * PayPal 
+    * Square
+    * MasterCard
+2. Lending
+    * LendingTree
+    * LendingClub
+    * Black Knight
+3. Banking
+    * Fiserv
+    * Jack Henry and Associates
+    * FIS (Fidelity National Information Services)
 
 ---
 
@@ -49,6 +37,9 @@ The following dependencies are used:
 4. [Matplotlib](https://github.com/matplotlib/matplotlib) (3.5.1) - Data visualization
 5. [Numpy](https://numpy.org/) (1.21.5) - Data calculations + Pandas support
 6. [hvPlot](https://hvplot.holoviz.org/index.html) (0.8.1) - Interactive Pandas plots 
+7. [holoviews](https://holoviews.org/) (1.15.2+) - **REQUIRED VERSION** Interactive Pandas plots; will cause error without proper version
+8. [Alpaca Trade API](https://alpaca.markets/docs/trading/) (2.3.0) - Required for Monte Carlo simulations
+9. [yfinance](https://pypi.org/project/yfinance/) (0.1.87) - Data collection
 
 ---
 
