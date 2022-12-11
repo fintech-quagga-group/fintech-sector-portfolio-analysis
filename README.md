@@ -8,7 +8,7 @@ Through our analysis we hope to answer the following questions:
 3. What are the relationships or correlations between each sector? 
 4. Based on what we learned about the sectors and stocks, if we were to come up with a Fintech portfolio what stocks would we choose?
 
-#### Data Used
+### Data Used
 We currently use [yfinance](https://pypi.org/project/yfinance/) to grab 5 years of closing price data (from the time that the notebook code is ran) for the following sectors if Fintech: 
     
 1. Paytech
@@ -23,6 +23,27 @@ We currently use [yfinance](https://pypi.org/project/yfinance/) to grab 5 years 
     * Fiserv
     * Jack Henry and Associates
     * FIS (Fidelity National Information Services)
+
+### Summary
+
+Our project begins by using yfinance to collect 5 years of closing price data from each stock within our chosen Fintech sectors. We then reformat the data to produce the daily returns needed to run the majority of our calculations. 
+
+![DataFrame that holds the daily returns of each stock in the Paytech sector](/Resources/Images/paytech-daily-df.png)
+![Line plot showing the daily returns of PYPL](/Resources/Images/paytech_daily_plot.png)
+
+Then we calculate metrics such as the cumulative returns, rolling 21-day average or standard devation, betas, and sharpe ratios. Each metric is visualized to better see how each stock or sector compares to each other. 
+
+![Composite line plot of cumulative returns for all stocks](/Resources/Images/all-sectors-cumulative-returns.png)
+![Composite bar plot of sharpe ratios for all stocks](/Resources/Images/all-sectors-sharpe-ratios.png)
+
+Next we run 5-year and 1-year prediction Monte Carlo simulations where for each prediction length we run even and uneven weight distributed simulations for each sector. The uneven weight distributions are a 50%, 30%, 20% split where each stock within the sector is weighted based on its Sharpe ratio. With the results from the Monte Carlo simulation we describe the 95% confidence intervals assuming we start with a portfolio value of $10,000
+
+![Resulting line plot of the cumulative returns predicted by the evenly weighted Monte Carlo simulation for Paytech](/Resources/Images/mc-even-weight.png)
+![95 percent confidence intervals based on the Monte Carlo prediction results](/Resources/Images/mc-confidence-interval.png)
+
+Finally, with the insights we gained from the calculations, we create a custom portfolio made up of the highest Sharpe ratio stocks from all sectors. We then run similar calculations by averaging the daily returns of all stocks to get the portfolio's daily returns for 5 years. With the daily returns we calculate annualized metrics and run Monte Carlo simulations to give predictions of how the portfolio might do in 1 or 5 years, again by looking at the 95% confidence intervals for each prediction with different weight distribution. 
+
+![Annualized average return and cumulative returns for custom portfolio](/Resources/Images/custom-portfolio-annualized.png)
 
 ---
 
@@ -51,7 +72,7 @@ If you would like to run the program in JupyterLab, install the [Anaconda](https
 
 ## Usage
 
-
+The Jupyter notebook [fintech-sector-portfolio-analysis.ipynb](/fintech-sector-portfolio-analysis.ipynb) will provide all steps of the data collection, preparation, and analysis. Data visualizations are shown inline and accompanying analysis responses are provided.
 
 ---
 
