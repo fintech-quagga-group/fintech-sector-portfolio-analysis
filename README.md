@@ -8,7 +8,21 @@ Through our analysis we hope to answer the following questions:
 3. What are the relationships or correlations between each sector? 
 4. Based on what we learned about the sectors and stocks, if we were to come up with a Fintech portfolio what stocks would we choose?
 
-
+#### Data Used
+We currently use [yfinance](https://pypi.org/project/yfinance/) to grab 5 years of closing price data (from the time that the notebook code is ran) for the following sectors if Fintech: 
+    
+1. Paytech
+    * PayPal 
+    * Square
+    * MasterCard
+2. Lending
+    * LendingTree
+    * LendingClub
+    * Black Knight
+3. Banking
+    * Fiserv
+    * Jack Henry and Associates
+    * FIS (Fidelity National Information Services)
 
 ---
 
