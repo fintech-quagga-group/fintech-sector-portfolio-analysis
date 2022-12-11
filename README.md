@@ -8,29 +8,7 @@ Through our analysis we hope to answer the following questions:
 3. What are the relationships or correlations between each sector? 
 4. Based on what we learned about the sectors and stocks, if we were to come up with a Fintech portfolio what stocks would we choose?
 
-Project Outline: 
-- Get daily returns
-- Data analysis and calculations
-    - Daily return plots
-    - Box plots
-    - plot cumulative returns (probably move this above rolling stats)
-    - plot 21-day rolling average and std
-    - calc annualized average return, annualized std, then plot sharpe ratio (probably all stocks in one graph)
-    - average (.mean(axis=1)) all the sectors and do the steps for “Diversify the portfolio”
-        - when doing cov probably want to compare banking and lending to paytech
-            - banking.rolling().cov(paytech)
-            - lending.rolling().cov(paytech)
-- Monte carlo simulations
-    - Even weight (.33, .33, .33) 5 year prediction
-    - (.5, .2, .3) 5 year
-    - (.33, .33, .33) 1 year
-    - (.5, .2, .3) 1 year
-- Custom portfolio (last part for module 7 challenge + monte carlo)
-    - average daily returns (.mean(axis=1))
-    - annualized average daily returns
-    - cumulative returns of average daily returns
-    - plot cumulative returns
-    - Monte carlo sims (TBD)
+
 
 ---
 
