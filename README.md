@@ -1,6 +1,6 @@
 # Fintech Sector Portfolio Analysis 
 
-This project is a portfolio analysis of different sectors within Fintech to better understand the growth, correlations, and profitability of Fintech companies. Through anaylzing different calculations such as finding the cumulative returns, 21-day rolling average and standard deviations, Sharpe ratios, and running Monte Carlo simulations, our analysis should provide insights into which sectors/stocks in Fintech would be good investments. 
+This project is a portfolio analysis of different sectors within Fintech to better understand the growth, correlations, and profitability of Fintech companies. Through analyzing different calculations such as finding the cumulative returns, 21-day rolling average and standard deviations, Sharpe ratios, and running Monte Carlo simulations, our analysis should provide insights into which sectors/stocks in Fintech would be good investments. 
 
 Through our analysis we hope to answer the following questions: 
 1. How does each Fintech sector, and the individual stocks within them, perform over time?
@@ -31,7 +31,7 @@ Our project begins by using yfinance to collect 5 years of closing price data fr
 ![DataFrame that holds the daily returns of each stock in the Paytech sector](/Resources/Images/paytech-daily-df.png)
 ![Line plot showing the daily returns of PYPL](/Resources/Images/paytech_daily_plot.png)
 
-Then we calculate metrics such as the cumulative returns, rolling 21-day average or standard devation, betas, and sharpe ratios. Each metric is visualized to better see how each stock or sector compares to each other. 
+Then we calculate metrics such as the cumulative returns, rolling 21-day averages and standard deviations, betas, and sharpe ratios. Each metric is visualized to better see how each stock or sector compares to each other. 
 
 ![Composite line plot of cumulative returns for all stocks](/Resources/Images/all-sectors-cumulative-returns.png)
 ![Composite bar plot of sharpe ratios for all stocks](/Resources/Images/all-sectors-sharpe-ratios.png)
