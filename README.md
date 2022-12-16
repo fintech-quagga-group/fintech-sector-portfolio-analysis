@@ -61,6 +61,7 @@ The following dependencies are used:
 7. [holoviews](https://holoviews.org/) (1.15.2+) - **REQUIRED VERSION** Interactive Pandas plots; will cause error without proper version
 8. [Alpaca Trade API](https://alpaca.markets/docs/trading/) (2.3.0) - Required for Monte Carlo simulations
 9. [yfinance](https://pypi.org/project/yfinance/) (0.1.87) - Data collection
+10. [nbdime](https://nbdime.readthedocs.io/en/latest/) (3.1.1) - Fixing merge conflicts in Jupyter notebooks
 
 ---
 
@@ -83,6 +84,8 @@ The Jupyter notebook [fintech-sector-portfolio-analysis.ipynb](/fintech-sector-p
 Note that the data collection and the Monte Carlo simulations change every time that the notebook is ran. The data collection gets data 5 years from the date ran and the Monte Carlo simulations use that data to produce randomized results to predict what the portfolio performance could look like based on that data. 
 
 The data collected and shown in the examples were from the time that this project was started - November 2022. 
+
+Our presentation slides for this project are in the Resources folder: [Fintech-Sector_Analysis-Presentation](/Resources/Fintech-Sector-Analysis-Presentation.pptx)
 
 ---
 
